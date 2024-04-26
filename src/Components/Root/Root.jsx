@@ -1,10 +1,12 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "../../assets/Shered/Navbar/Navbar";
-import Footer from "../../assets/Shered/Footer/Footer";
+import { Outlet, ScrollRestoration } from "react-router-dom";
+import Navbar from "../../Shered/Navbar/Navbar";
+import Footer from "../../Shered/Footer/Footer";
+
 
 const Root = () => {
     return (
         <>
+            <ScrollRestoration />
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
