@@ -1,8 +1,8 @@
 const FAQSection = () => {
     return (
-        <div className="pt-12 pb-8 bg-slate-100 px-2">
+        <div className="pt-16 pb-8 px-3">
             <div data-aos="zoom-in" data-aos-duration="800" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
-                <h2 className="text-5xl text-center text-blue font-bold mb-4">FAQ&apos;s</h2>
+                <h2 className="text-5xl text-center font-bold mb-4">FAQ&apos;s</h2>
                 <p className="w-3/4 mx-auto text-center text-sm md:text-base text-tertiary mb-8">Have a question about our art and craft studio? Browse our frequently asked questions below. If you need more information, feel free to reach out to us directly.</p>
             </div>
             <div data-aos="fade-up" data-aos-duration="7000" data-aos-anchor-placement="top-bottom" data-aos-delay="50" tabIndex={0} className="rounded-b collapse collapse-arrow text-white bg-blue focus:bg-red">

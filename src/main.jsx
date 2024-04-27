@@ -9,6 +9,10 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import { HelmetProvider } from 'react-helmet-async';
 import AuthProvider from './ContextApi/AuthProvider/AuthProvider';
+import AllArts from './Components/AllArts/AllArts';
+import AddCraft from './Components/AddCraft/AddCraft';
+import MyArtList from './Components/MyArtList/MyArtList';
+import ContactUs from './Components/ContactUs/ContactUs';
 
 
 const router = createBrowserRouter([
@@ -29,6 +33,22 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path: "/allArts",
+        element: <AllArts></AllArts>,
+      },
+      {
+        path: "/addCraft",
+        element: <AddCraft></AddCraft>,
+      },
+      {
+        path: "/myArtList",
+        element: <MyArtList></MyArtList>,
+      },
+      {
+        path: "/contactUs",
+        element: <ContactUs></ContactUs>,
+      }
     ],
   },
 ]);
