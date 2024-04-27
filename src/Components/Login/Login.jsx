@@ -82,7 +82,7 @@ const Login = () => {
             </Helmet>
             <div className="flex hero-content flex-col justify-around px-2 lg:flex-row">
                 <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="text-center lg:text-left text-white lg:ml-8">
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Welcome to BB-Artistry Login!</h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Welcome to <span className="text-blue font-extrabold">BB-Artistry</span> Login...</h1>
                     <p className="py-6 md:text-md text-xs md:text-sm lg:text-base px-3 md:px-24 lg:px-0">
                         Please login to access your account. <br />
                         If you have any questions or need assistance, feel free to contact our support team.
@@ -90,10 +90,10 @@ const Login = () => {
                     </p>
                 </div>
                 <div className="md:w-2/4 justify-around lg:ml-8">
-                    <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="card bg-white shrink-0 w-full shadow-2xl bg-base-100">
+                    <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="card bg-white shrink-0 w-full shadow-2xl">
                         <div className="flex justify-center w-full mt-8">
                             <div>
-                                <h5 className="text-blue font-bold text-4xl">Login Here</h5>
+                                <h5 className="text-blue font-bold text-4xl font-Rajdhani">Login Here</h5>
                             </div>
                         </div>
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body px-6 md:px-8 pb-0">
