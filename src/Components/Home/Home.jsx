@@ -12,6 +12,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Helmet } from 'react-helmet-async';
 import Banner1 from '../Banner1/Banner1';
 import Banner2 from '../Banner2/Banner2';
+import FAQSection from '../FAQsection/FAQsection';
 
 
 const Home = () => {
@@ -76,7 +77,7 @@ const Home = () => {
             <Banner1></Banner1>
             {/* <Estate estateData={estateData}></Estate> */}
             <Banner2></Banner2>
-            {/* <FAQsection></FAQsection> */}
+            <FAQSection></FAQSection>
         </div>
     );
 };

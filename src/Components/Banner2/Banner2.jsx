@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Banner2 = () => {
     return (
-        <div className="card mb-20 mt-8 lg:card-side text-white shadow-xl bg-color1 mx-4 p-4 pb-4">
+        <div className="card mb-4 mt-8 lg:card-side text-white shadow-xl bg-color1 mx-4 p-4 pb-4">
             <div data-aos="fade-right" data-aos-duration="600" data-aos-anchor-placement="top-bottom" data-aos-delay="500" className="w-full h-full flex lg:w-2/4 items-center justify-center mt-3">
                 <div>
                     <figure><img className="rounded-lg" src="https://detroitwpresidence.b-cdn.net/wp-content/uploads/2022/08/team2.jpg" alt="Painting Banner" /></figure>
