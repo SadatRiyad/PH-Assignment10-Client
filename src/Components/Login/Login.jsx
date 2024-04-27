@@ -3,11 +3,13 @@ import { useForm } from "react-hook-form"
 import { FaFacebook } from "react-icons/fa6";
 import { AiFillGoogleCircle, AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
-import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
 import { useContext, useState } from "react";
-import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
+import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
     const navigate = useNavigate();

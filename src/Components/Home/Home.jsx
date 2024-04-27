@@ -10,12 +10,14 @@ import './Home.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Helmet } from 'react-helmet-async';
+import Banner1 from '../Banner1/Banner1';
+import Banner2 from '../Banner2/Banner2';
 
 
 const Home = () => {
     // const estateData = useLoaderData();
     return (
-        <div className="px-2">
+        <div>
             <Helmet>
                 <title>Home | BB-RealEstate</title>
             </Helmet>
@@ -71,9 +73,9 @@ const Home = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            {/* <Banner1></Banner1> */}
+            <Banner1></Banner1>
             {/* <Estate estateData={estateData}></Estate> */}
-            {/* <Banner2></Banner2> */}
+            <Banner2></Banner2>
             {/* <FAQsection></FAQsection> */}
         </div>
     );
