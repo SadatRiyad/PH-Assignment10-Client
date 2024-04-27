@@ -59,7 +59,7 @@ const Register = () => {
                         If you have any questions or need assistance, feel free to contact our support team.
                     </p>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="card bg-white shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="card bg-white shrink-0 w-full max-w-sm shadow-2xl">
                     <div className="flex justify-center w-full mt-8">
                         <div>
                             <h5 className="text-blue font-bold text-4xl font-Rajdhani">Register Here</h5>

@@ -37,7 +37,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="w-full mb-16 text-white">
+        <div className="w-full mb-20 text-white">
             {/* <!-- navbar start --> */}
             <nav data-aos="fade-down" data-aos-duration="500" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="top-0 z-10 mx-auto w-full max-w-[1280px] fixed shadow-2xl">
                 <div className="justify-center items-center">
@@ -52,7 +52,7 @@ const Navbar = () => {
                                     </svg>
                                 </div>
                                 <ul tabIndex="0"
-                                    className="menu menu-sm dropdown-content mt-3 md:mt-0 z-[10000] p-0 md:p-0 shadow bg-base-100 rounded-box w-52 font-medium">
+                                    className="menu menu-sm dropdown-content mt-3 md:mt-0 z-[10000] p-0 md:p-0 shadow bg-blue rounded-box w-52 font-medium">
                                     {Links}
                                     <label className="swap swap-rotate">
                                         <input type="checkbox" onChange={toggleTheme} checked={theme === "dark"} className="theme-controller" />
@@ -99,8 +99,8 @@ const Navbar = () => {
                                                     {user.email ? user.email : "UserEmail"}
                                                 </li>
                                                 <li className="px-2 mb-2 mt-1 text-sm">
-                                                    <Link to="/updateProfile" className="font-medium mb-2 mt-4 bg-red hover:bg-white shadow-xl text-white border border-red focus:text-red hover:text-red hover:bg-transparent transition-colors duration-75">Update Profile</Link>
-                                                    <Link to="/login" onClick={() => handleLogout()} className="font-medium hover:bg-white shadow-xl bg-red text-white border border-red focus:text-red hover:text-red hover:bg-transparent transition-colors duration-75">Logout</Link>
+                                                    {/* <Link to="/updateProfile" className="font-medium mb-2 mt-4 bg-red hover:bg-white shadow-xl text-white border border-red focus:text-red hover:text-red hover:bg-transparent transition-colors duration-75">Update Profile</Link> */}
+                                                    <Link to="/login" onClick={() => handleLogout()} className="font-medium mt-3 hover:bg-white shadow-xl bg-red text-white border border-red focus:text-red hover:text-red hover:bg-transparent transition-colors duration-75">Logout</Link>
                                                 </li>
 
                                             </ul>
@@ -110,7 +110,7 @@ const Navbar = () => {
                                     :
                                     <div>
                                         <NavLink to="/login" className="btn mb-1 justify-center items-center bg-red hover:bg-transparent border-red text-white hover:text-red rounded hover:border-red  hover:-translate-y-0 transition-all duration-200">Login</NavLink>
-                                        <NavLink to="/register" className="btn mr-4 ml-2 bg-red hover:bg-transparent border-red text-white hover:text-red rounded hover:border-red  hover:-translate-y-0 transition-all duration-200">Register</NavLink>
+                                        <NavLink to="/register" className="btn mr-2 ml-2 bg-color1 hover:bg-transparent border-color1 text-blue hover:text-color1 rounded hover:border-color1  hover:-translate-y-0 transition-all duration-200">Register</NavLink>
                                     </div>
                             }
                         </div>

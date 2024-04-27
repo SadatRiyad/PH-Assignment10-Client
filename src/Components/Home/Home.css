@@ -1,0 +1,50 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet{
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    border: 1.1px solid black;
+  }
+
+  .a1{
+    background-image: url('https://storage.googleapis.com/pai-images/b45ea97717e3405b8ec991c9433ba45a.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .a2{
+    background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/ap23284367588024.jpg?c=original');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .a3{
+    background-image: url('https://storage.prompt-hunt.workers.dev/695a8e47-264c-4de1-ba81-ea80c66110f5');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    color: #bb2e2e;
+    font-weight: bold;
+  }
