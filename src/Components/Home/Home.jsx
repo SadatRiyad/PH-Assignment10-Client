@@ -38,17 +38,18 @@ const Home = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="hero a3 min-h-screen">
+                    <div data-aos="zoom-in" data-aos-duration="1000" className="hero a1 min-h-screen">
                         <div className="hero-overlay bg-opacity-30"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="px-8">
-                                <h1 className="mb-6 text-4xl text-color2 lg:text-6xl md:text-5xl font-bold">Art for Every Occasion</h1>
-                                <p className="mb-5 px-6 lg:px-24 text-color2 text-sm lg:text-base md:text-base">From the abstract masterpieces to charming cartoon designs, <br /> find the perfect art piece for every taste and preference.</p>
-                                <a href='#banner' className="btn bg-red hover:bg-red border-red text-white hover:text-white rounded hover:border-red  hover:-translate-y-1 transition-all duration-200 font-bold mt-6">Discover More</a>
+                            <div className="px-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" >
+                                <h1 className="mb-8 text-color2 text-4xl lg:text-6xl md:text-5xl font-extrabold">Express Your Imagination</h1>
+                                <p className="mb-5 text-color2 px-6 lg:px-24 text-sm lg:text-base md:text-base">Discover a world of creativity with our unique collection of landscape paintings, <br /> portrait drawings, and watercolor art.</p>
+                                <a href='#banner' className="btn bg-red hover:bg-red border-red text-white hover:text-white rounded hover:border-red  hover:-translate-y-1 transition-all duration-200 font-bold mt-6">Explore Now</a>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="hero a2 min-h-screen">
                         <div className="hero-content text-left text-white shadow-lg hero-overlay bg-opacity-30  md:bg-opacity-15 relative">
@@ -61,14 +62,15 @@ const Home = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
-                    <div data-aos="zoom-in" data-aos-duration="1000" className="hero a1 min-h-screen">
+                    <div className="hero a3 min-h-screen">
                         <div className="hero-overlay bg-opacity-30"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="px-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" >
-                                <h1 className="mb-8 text-color2 text-4xl lg:text-6xl md:text-5xl font-extrabold">Express Your Imagination</h1>
-                                <p className="mb-5 text-color2 px-6 lg:px-24 text-sm lg:text-base md:text-base">Discover a world of creativity with our unique collection of landscape paintings, <br /> portrait drawings, and watercolor art.</p>
-                                <a href='#banner' className="btn bg-red hover:bg-red border-red text-white hover:text-white rounded hover:border-red  hover:-translate-y-1 transition-all duration-200 font-bold mt-6">Explore Now</a>
+                            <div className="px-8">
+                                <h1 className="mb-6 text-4xl text-color2 lg:text-6xl md:text-5xl font-bold">Art for Every Occasion</h1>
+                                <p className="mb-5 px-6 lg:px-24 text-color2 text-sm lg:text-base md:text-base">From the abstract masterpieces to charming cartoon designs, <br /> find the perfect art piece for every taste and preference.</p>
+                                <a href='#banner' className="btn bg-red hover:bg-red border-red text-white hover:text-white rounded hover:border-red  hover:-translate-y-1 transition-all duration-200 font-bold mt-6">Discover More</a>
                             </div>
                         </div>
                     </div>

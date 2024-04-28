@@ -13,6 +13,7 @@ import AllArts from './Components/AllArts/AllArts';
 import AddCraft from './Components/AddCraft/AddCraft';
 import MyArtList from './Components/MyArtList/MyArtList';
 import ContactUs from './Components/ContactUs/ContactUs';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -39,11 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/addCraft",
-        element: <AddCraft></AddCraft>,
+        element: <PrivateRoute><AddCraft></AddCraft></PrivateRoute>,
       },
       {
         path: "/myArtList",
-        element: <MyArtList></MyArtList>,
+        element: <PrivateRoute><MyArtList></MyArtList></PrivateRoute>,
       },
       {
         path: "/contactUs",

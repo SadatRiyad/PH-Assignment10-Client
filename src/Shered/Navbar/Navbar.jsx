@@ -29,11 +29,11 @@ const Navbar = () => {
 
 
     const Links = <>
-        <li><NavLink to="/" className="hover:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">Home</NavLink></li>
-        <li><NavLink to="/allArts" className="hover:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">All Art & Craft Items</NavLink></li>
-        <li><NavLink to="/addCraft" className="hover:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">Add Craft Item</NavLink></li>
-        <li><NavLink to="/myArtList" className="hover:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">My Art & Craft List</NavLink></li>
-        <li><NavLink to="/contactUs" className="hover:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">Contact Us</NavLink></li>
+        <li><NavLink to="/" className="hover:text-red focus:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">Home</NavLink></li>
+        <li><NavLink to="/allArts" className="hover:text-red focus:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">All Art & Craft Items</NavLink></li>
+        <li><NavLink to="/addCraft" className="hover:text-red focus:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">Add Craft Item</NavLink></li>
+        <li><NavLink to="/myArtList" className="hover:text-red focus:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">My Art & Craft List</NavLink></li>
+        <li><NavLink to="/contactUs" className="hover:text-red focus:text-red hover:bg-transparent transition-colors duration-75 mr-[2px]">Contact Us</NavLink></li>
     </>
 
     return (
