@@ -10,9 +10,9 @@ import './Home.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Helmet } from 'react-helmet-async';
-import Banner1 from '../Banner1/Banner1';
-import Banner2 from '../Banner2/Banner2';
-import FAQSection from '../FAQsection/FAQsection';
+import Banner1 from './Banner1/Banner1';
+import Banner2 from './Banner2/Banner2';
+import FAQSection from './FAQsection/FAQsection';
 
 
 const Home = () => {

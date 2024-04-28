@@ -24,6 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        loader: () => fetch('http://localhost:5000/PaintingAndDrawing'),
         element: <Home></Home>,
       },
       {
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/allArts",
+        loader: () => fetch('http://localhost:5000/PaintingAndDrawing'),
         element: <AllArts></AllArts>,
       },
       {
