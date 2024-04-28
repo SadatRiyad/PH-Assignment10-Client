@@ -1,8 +1,10 @@
-import { useLoaderData } from "react-router-dom";
 import ArtsTableData from "./ArtsTableData";
+import { useContext } from "react";
+import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
 
 const AllArts = () => {
-  const allArts = useLoaderData();
+  const {data} = useContext(AuthContext);
+  const allArts = data;
 
   return (
     <div className="mt-36 mx-4 my-12">
@@ -51,4 +53,4 @@ export default AllArts;
 // userEmail,
 // userName,
 // _id,
-// const { image, item_name, price, rating, short_description, stockStatus, subcategory_Name, userEmail, userName, _id } = arts;
+// const { customization, image, item_name, price, processing_time, rating, short_description, stockStatus, subcategory_Name, userEmail, userName, _id } = arts;

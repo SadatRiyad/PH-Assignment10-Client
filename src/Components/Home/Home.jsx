@@ -13,10 +13,15 @@ import { Helmet } from 'react-helmet-async';
 import Banner1 from './Banner1/Banner1';
 import Banner2 from './Banner2/Banner2';
 import FAQSection from './FAQsection/FAQsection';
+import CraftItems from './CraftItems/CraftItems';
+import { useContext } from 'react';
+import { AuthContext } from '../../ContextApi/AuthProvider/AuthProvider';
 
 
 const Home = () => {
-    // const estateData = useLoaderData();
+    const { data } = useContext(AuthContext);
+    const craftItemData = data;
+
     return (
         <div>
             <Helmet>
@@ -77,7 +82,7 @@ const Home = () => {
                 </SwiperSlide>
             </Swiper>
             <Banner1></Banner1>
-            {/* <Estate estateData={estateData}></Estate> */}
+            <CraftItems craftItemData={craftItemData}></CraftItems>
             <Banner2></Banner2>
             <FAQSection></FAQSection>
         </div>

@@ -207,7 +207,7 @@ const AddCraft = () => {
                                 required
                             >
                                 <option value="" disabled>Select Stock Status</option>
-                                <option value="In stock">In stock</option>
+                                <option value="In stock">In Stock</option>
                                 <option value="Made to Order">Made to Order</option>
                             </select>
                         </div>

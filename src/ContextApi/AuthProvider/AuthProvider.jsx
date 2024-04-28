@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
-import { GoogleAuthProvider,FacebookAuthProvider } from "firebase/auth";
+import { GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import app from "../../FirebaseConfig/firebase.config";
 
 // export the AuthContext so that other components can use it
@@ -13,6 +13,8 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const [render, setRender] = useState(false);
+    const [data, setData] = useState([]);
+
     // google auth provider
     const googleProvider = new GoogleAuthProvider();
     // facebook auth provider
@@ -89,9 +91,24 @@ const AuthProvider = ({ children }) => {
         return () => unSubscribe();
     }, [render, auth]);
 
+    // useEffet for loading api
+    useEffect(() => {
+        const unData = fetch('http://localhost:5000/PaintingAndDrawing')
+            .then(res => res.json())
+            .then(data => {
+                setData(data)
+                // console.log(data)
+                setLoading(false);
+            })
+            .catch(err => console.log(err))
+        return () => unData;
+    }, [])
+
+
     // value to be provided to the children components in the AuthContext
     const authInfo = {
         auth,
+        data,
         user,
         setUser,
         setRender,
