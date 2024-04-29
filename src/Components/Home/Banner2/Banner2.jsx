@@ -13,7 +13,7 @@ const Banner2 = () => {
                 <h2 className="card-title mt-2 font-bold text-2xl md:text-3xl lg:text-3xl">EXPLORE THE TEAM OF <br /> PAINTING & DRAWING</h2>
                 <p className="text-slate-50 text-base mt-4">Welcome to BB-Artistry, where creativity meets craftsmanship. Immerse yourself in our curated collection of exquisite paintings, drawings, and unique craft items. Whether you are looking to adorn your space or commission a custom piece, our team of talented artists is here to bring your vision to life. Contact us today to discuss your creative ideas and discover the perfect addition to your collection.</p>
                 <div className="card-actions justify-start">
-                    <Link to="/contactUs" className="btn bg-blue text-white border-blue hover:bg-blue hover:text-white hover:border-blue mt-5 hover:-translate-y-1 transition-all duration-100">Contact Us</Link>
+                    <Link to="/contactUs" className="btn w-full bg-color2 text-blue border-blue hover:bg-blue hover:text-white hover:border-blue mt-6 hover:translate-y-1 transition-all duration-100">Contact Us</Link>
                 </div>
             </div>
         </div>

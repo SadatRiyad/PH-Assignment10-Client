@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 
 const AddCraft = () => {
-    const { auth } = useContext(AuthContext);
+    const { auth, setRender1, render1 } = useContext(AuthContext);
     const currentUser = auth.currentUser;
 
     const [formData, setFormData] = useState({
@@ -46,6 +46,8 @@ const AddCraft = () => {
             .then(data => {
                 if (data) {
                     toast.success('Craft item added successfully!', { type: "success", autoClose: 2000 });
+                    setRender1(!render1);
+
                 } else {
                     console.log(data);
                 }

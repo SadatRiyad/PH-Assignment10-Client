@@ -6,6 +6,7 @@ import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
 
 const Navbar = () => {
     const { user, logoutUser } = useContext(AuthContext);
+    // const email = user.email;
     const [theme, setTheme] = useState(() => {
         // Initialize theme based on localStorage or default to 'light'
         return localStorage.getItem("theme") || "light";
@@ -25,7 +26,7 @@ const Navbar = () => {
         // Apply the current theme to the HTML element
         document.documentElement.setAttribute("data-theme", theme);
     }, [theme]);
-
+    
 
 
     const Links = <>

@@ -14,7 +14,7 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [render, setRender] = useState(false);
     const [data, setData] = useState([]);
-
+    const [render1, setRender1] = useState(false);
     // google auth provider
     const googleProvider = new GoogleAuthProvider();
     // facebook auth provider
@@ -96,11 +96,11 @@ const AuthProvider = ({ children }) => {
         const unData = fetch('http://localhost:5000/PaintingAndDrawing')
             .then(res => res.json())
             .then(data => {
-                setData(data)
+                setData(data);
             })
             .catch(err => console.log(err))
         return () => unData;
-    }, [data])
+    }, [render1])
 
 
     // value to be provided to the children components in the AuthContext
@@ -109,6 +109,8 @@ const AuthProvider = ({ children }) => {
         data,
         user,
         setUser,
+        setRender1,
+        render1,
         setRender,
         registerUser,
         loginUser,
