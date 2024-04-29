@@ -34,7 +34,7 @@ const MyArtListCard = ({ craftItemData }) => {
                         <Link to={`/craftItemDetails/id/${_id}`} className="btn bg-color2 hover:bg-transparent border-color2 text-white hover:text-color2 rounded hover:border-color2 transition-all duration-200 font-bold w-full md:px-5">Details </Link>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="600" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >
-                        <Link to={`/craftItemDetails/id/${_id}`} className="btn bg-color1 hover:bg-transparent border-color1 text-white hover:text-color1 rounded hover:border-color1 transition-all duration-200 font-bold w-full md:px-5">Update </Link>
+                        <Link to={`/updateArtAndCraft/id/${_id}`} className="btn bg-color1 hover:bg-transparent border-color1 text-white hover:text-color1 rounded hover:border-color1 transition-all duration-200 font-bold w-full md:px-5">Update </Link>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="600" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >
                         <Link to={`/craftItemDetails/id/${_id}`} className="btn bg-red hover:bg-transparent border-red text-white hover:text-red rounded hover:border-red transition-all duration-200 font-bold w-full md:px-5">Delete </Link>

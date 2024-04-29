@@ -39,18 +39,3 @@ const AllArts = () => {
 };
 
 export default AllArts;
-
-
-// customization,
-// image,
-// item_name,
-// price,
-// processing_time,
-// rating,
-// short_description,
-// stockStatus,
-// subcategory_Name,
-// userEmail,
-// userName,
-// _id,
-// const { customization, image, item_name, price, processing_time, rating, short_description, stockStatus, subcategory_Name, userEmail, userName, _id } = arts;

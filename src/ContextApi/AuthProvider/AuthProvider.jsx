@@ -100,8 +100,7 @@ const AuthProvider = ({ children }) => {
             })
             .catch(err => console.log(err))
         return () => unData;
-    }, [render1])
-
+    }, [render1, setRender1])
 
     // value to be provided to the children components in the AuthContext
     const authInfo = {

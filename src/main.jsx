@@ -16,6 +16,7 @@ import ContactUs from './Components/ContactUs/ContactUs';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import CraftItemDetails from './Components/CraftItemDetails/CraftItemDetails';
 import Subcategory from './Components/Subcategory/Subcategory';
+import UpdateArtAndCraft from './Components/UpdateArtAndCraft/UpdateArtAndCraft';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
       {
         path: "/myArtList",
         element: <PrivateRoute><MyArtList></MyArtList></PrivateRoute>,
+      },
+      {
+        path: "/updateArtAndCraft/id/:id",
+        element: <PrivateRoute><UpdateArtAndCraft></UpdateArtAndCraft></PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/PaintingAndDrawing/${params.id}`),
       },
       {
         path: "/craftItemDetails/id/:id",
