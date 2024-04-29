@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../ContextApi/AuthProvider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const AddCraft = () => {
@@ -35,22 +35,23 @@ const AddCraft = () => {
         // console.log(formData);
 
         // Add Craft Item to Database
-        fetch('http://localhost:5000/PaintingAndDrawing',{
+        fetch('http://localhost:5000/PaintingAndDrawing', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(formData)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            if(!data){
-                console.log(data);
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data) {
+                    toast.success('Craft item added successfully!', { type: "success", autoClose: 2000 });
+                } else {
+                    console.log(data);
+                }
+            })
 
 
-        toast.success('Craft item added successfully!',{ type: "success", autoClose: 2000 });
         // Reset form fields after submission
         setFormData({
             image: '',
@@ -126,7 +127,6 @@ const AddCraft = () => {
                                 <option value="Oil Painting">Oil Painting</option>
                                 <option value="Charcoal Sketching">Charcoal Sketching</option>
                                 <option value="Cartoon Drawing">Cartoon Drawing</option>
-                                {/* Add more options for other subcategories */}
                             </select>
                         </div>
                         <div className="mb-3">
@@ -214,8 +214,8 @@ const AddCraft = () => {
                         <button type="submit" className="btn mb-8 mt-2 bg-red w-full text-white hover:bg-transparent hover:text-red hover:border-red bprder-red">Add Craft Item</button>
                     </form>
                 </div>
-
             </div>
+            <ToastContainer/>
         </div>
     );
 };

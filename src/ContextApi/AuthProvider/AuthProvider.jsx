@@ -97,12 +97,10 @@ const AuthProvider = ({ children }) => {
             .then(res => res.json())
             .then(data => {
                 setData(data)
-                // console.log(data)
-                setLoading(false);
             })
             .catch(err => console.log(err))
         return () => unData;
-    }, [])
+    }, [data])
 
 
     // value to be provided to the children components in the AuthContext

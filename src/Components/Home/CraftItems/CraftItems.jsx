@@ -11,7 +11,7 @@ const CraftItems = ({ craftItemData }) => {
             <div className="text-start mt-8 md:mt-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full px-4">
 
-                    {craftItemData?.map(craftItemData => (
+                    {craftItemData?.slice(0, 6).map((craftItemData) => (
                         <CraftItemData key={craftItemData._id} craftItemData={craftItemData} />
                     ))}
 
