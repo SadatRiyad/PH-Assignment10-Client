@@ -52,12 +52,11 @@ const UpdateArtAndCraft = () => {
             .then(data => {
                 if (data) {
                     toast.success('Update successfully!', { type: "success", autoClose: 2000 });
-                    setTimeout (() => {
+                    setTimeout(() => {
                         setRender1(!render1);
-                    }, 2500)
+                    }, 1500)
                 }
             })
-
     };
 
     return (
@@ -91,7 +90,7 @@ const UpdateArtAndCraft = () => {
                             <label htmlFor="item_name" className="form-label label-text">Item Name:</label>
                             <input
                                 type="text"
-                                className="form-control input w-full input-bordered mt-1"
+                                className="form-control input w-full input-bordered mt-1 grow"
                                 id="item_name"
                                 name="item_name"
                                 value={formData.item_name}

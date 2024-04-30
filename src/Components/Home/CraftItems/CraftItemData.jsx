@@ -12,7 +12,7 @@ const CraftItemData = ({ craftItemData }) => {
         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-delay="0" className="card bg-white shadow-md border-[.5px] transition-transform duration-300 transform hover:shadow-2xl">
             <div>
                 <figure className="p-4 w-full rounded-xl">
-                    <img src={image} alt="estate img" className="relative rounded-xl w-full transition-transform duration-300 transform" />
+                    <img src={image} alt="Craft img" className="relative rounded-xl w-full transition-transform duration-300 transform" />
                     <div className='absolute bg-red px-4 py-1 rounded-2xl top-6 right-6'>
                         <h5 className='text-white font-bold shadow-lg'>{stockStatus}</h5>
                     </div>

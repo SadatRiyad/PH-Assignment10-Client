@@ -64,7 +64,7 @@ const CraftItemDetails = () => {
             <div className="card-body px-1 md:px-4 lg:card-side bg-base-200 rounded-2xl my-2 md:my-8">
                 <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-delay="50" className="card-body bg-blue rounded-2xl lg:w-2/4 p-8 lg:p-6 justify-around">
                     <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-delay="500" >
-                        <img src={image} alt="estate" className="rounded-xl w-full transition-transform duration-300 transform" />
+                        <img src={image} alt="Craft img" className="rounded-xl w-full transition-transform duration-300 transform" />
                     </div>
                     <div className="mt-4">
                         <p className="font-semibold text-red text-xs md:text-base lg:text-lg mt-1"><span className="text-tertiary font-bold">Author Name : </span> {userName}</p>
