@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
 
+
 const Navbar = () => {
     const { user, logoutUser } = useContext(AuthContext);
     // const email = user.email;

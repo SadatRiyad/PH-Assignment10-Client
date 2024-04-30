@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
 import MyArtListCard from "./MyArtListCard";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const MyArtList = () => {
     const { user, render1 } = useContext(AuthContext);
@@ -15,7 +16,7 @@ const MyArtList = () => {
     }, [sortOption]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/PaintingAndDrawing/myArtList/${email}`, {
+        fetch(`https://bb-artistry-server.vercel.app/PaintingAndDrawing/myArtList/${email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -30,7 +31,7 @@ const MyArtList = () => {
     const fetchArtCraftItems = async () => {
         try {
             const response = await fetch(
-                `http://localhost:5000/PaintingAndDrawing/myArtList/${user.email}?sortBy=${sortOption}`
+                `https://bb-artistry-server.vercel.app/PaintingAndDrawing/myArtList/${user.email}?sortBy=${sortOption}`
             );
             const data = await response.json();
             setCraftItemData(data);
@@ -45,6 +46,9 @@ const MyArtList = () => {
 
     return (
         <>
+            <Helmet>
+                <title>My Art List | BB-Artistry</title>
+            </Helmet>
             <div className="py-20 mt-8 bg-color2" id="myArt">
                 <div className="hero -mt-20 w-full h-[50vh]" style={{ backgroundImage: 'url(https://st3.depositphotos.com/1034582/34664/v/450/depositphotos_346643858-stock-illustration-banner-background-pastel-blue-low.jpg)' }}>
                     <div className="hero-overlay bg-opacity-10"></div>
@@ -78,7 +82,7 @@ const MyArtList = () => {
                 <div className="text-start mt-8 md:mt-20">
                     {
                         craftItemData.length === 0 && <div className="bg-base-200 px-6 py-12 md:p-12 ">
-                            <h1 className="text-center px-5 md:px-12 text-xl md:2xl lg:3xl font-bold text-red">Hey there! <br /> It looks like you haven&apos;t added any art or craft items yet. <br /> Why not get started and showcase your creativity? <br /> Click the button below to add your first piece of <br /> art or craft to your personalized gallery. <br /> We can&apos;t wait to see what you create!</h1>
+                            <h1 className="text-center px-5 md:px-12 text-xl md:2xl lg:3xl font-bold text-red">Hey there! <br /> It looks like you haven&apos;t added any art or craft items yet. <br /> Why not get started and showcase your creativity? <br /> Click the button below to add your first piece of <br /> art or craft to your personalized gallery. <br /> We can&apos;t wait to see what you create! </h1>
                             <div className="flex justify-center mt-8">
                                 <Link to="/addCraft" className="btn btn-primary bg-red border-red text-white hover:bg-red hover:border-red hover:-translate-y-1">Add Art & Craft</Link>
                             </div>

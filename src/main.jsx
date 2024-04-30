@@ -52,17 +52,17 @@ const router = createBrowserRouter([
       {
         path: "/updateArtAndCraft/id/:id",
         element: <PrivateRoute><UpdateArtAndCraft></UpdateArtAndCraft></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/PaintingAndDrawing/${params.id}`),
+        loader: ({ params }) => fetch(`https://bb-artistry-server.vercel.app/PaintingAndDrawing/${params.id}`),
       },
       {
         path: "/craftItemDetails/id/:id",
         element: <PrivateRoute><CraftItemDetails></CraftItemDetails></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/PaintingAndDrawing/${params.id}`),
+        loader: ({ params }) => fetch(`https://bb-artistry-server.vercel.app/PaintingAndDrawing/${params.id}`),
       },
       {
         path: "/subCategory/:subCategoryName",
         element: <Subcategory></Subcategory>,
-        loader: ({ params }) => fetch(`http://localhost:5000/PaintingAndDrawing/subcategory/${params.subCategoryName}`),
+        loader: ({ params }) => fetch(`https://bb-artistry-server.vercel.app/PaintingAndDrawing/subcategory/${params.subCategoryName}`),
       },
       {
         path: "/contactUs",

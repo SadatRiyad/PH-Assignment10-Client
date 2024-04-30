@@ -1,11 +1,15 @@
 import { useLoaderData } from "react-router-dom";
 import CraftItemData from "../Home/CraftItems/CraftItemData";
+import { Helmet } from "react-helmet-async";
 
 const Subcategory = () => {
     const craftItemData = useLoaderData();
 
     return (
         <div className="py-20 mt-8 bg-color2" id="craftItems">
+            <Helmet>
+                <title>Sub-Category Showcase | BB-Artistry</title>
+            </Helmet>
             <div className="hero -mt-20 w-full h-[50vh]" style={{ backgroundImage: 'url(https://st3.depositphotos.com/1034582/34664/v/450/depositphotos_346643858-stock-illustration-banner-background-pastel-blue-low.jpg)' }}>
                 <div className="hero-overlay bg-opacity-10"></div>
                 <div className="hero-content text-center text-neutral-content">

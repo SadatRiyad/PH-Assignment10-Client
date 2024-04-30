@@ -41,7 +41,7 @@ const UpdateArtAndCraft = () => {
         e.preventDefault();
         // console.log(formData);
 
-        fetch(`http://localhost:5000/PaintingAndDrawing/${_id}`, {
+        fetch(`https://bb-artistry-server.vercel.app/PaintingAndDrawing/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ const UpdateArtAndCraft = () => {
     return (
         <div className="hero card-body px-4 md:px-12 min-h-screen bg-color2">
             <Helmet>
-                <title>Add Craft Item | BB-Artistry</title>
+                <title>Update Craft Item | BB-Artistry</title>
             </Helmet>
             <div className="justify-center flex w-full">
                 <div data-aos="zoom-in" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="50" className="card px-6 shrink-0 w-full max-w-lg shadow-2xl bg-base-100">

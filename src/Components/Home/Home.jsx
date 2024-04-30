@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <div>
             <Helmet>
-                <title>Home | BB-RealEstate</title>
+                <title>Home | BB-Artistry</title>
             </Helmet>
             <Swiper
                 spaceBetween={30}

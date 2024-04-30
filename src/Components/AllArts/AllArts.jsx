@@ -1,13 +1,17 @@
 import ArtsTableData from "./ArtsTableData";
 import { useContext } from "react";
 import { AuthContext } from "../../ContextApi/AuthProvider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const AllArts = () => {
-  const {data} = useContext(AuthContext);
+  const { data } = useContext(AuthContext);
   const allArts = data;
 
   return (
     <div className="mt-36 mx-4 my-12">
+      <Helmet>
+        <title>All Art & Craft Item | BB-Artistry</title>
+      </Helmet>
       <h1 className="text-center text-2xl md:text-4xl mb-10 mt-6 font-extrabold">Total Arts & Craft Items : {allArts.length}</h1>
 
       <div className="overflow-x-auto">

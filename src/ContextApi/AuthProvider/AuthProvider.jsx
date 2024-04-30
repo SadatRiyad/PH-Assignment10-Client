@@ -93,7 +93,7 @@ const AuthProvider = ({ children }) => {
 
     // useEffet for loading api
     useEffect(() => {
-        const unData = fetch('http://localhost:5000/PaintingAndDrawing')
+        const unData = fetch('https://bb-artistry-server.vercel.app/PaintingAndDrawing')
             .then(res => res.json())
             .then(data => {
                 setData(data);

@@ -21,7 +21,7 @@ const MyArtListCard = ({ craftItemData }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/PaintingAndDrawing/${_id}`, {
+                fetch(`https://bb-artistry-server.vercel.app/PaintingAndDrawing/${_id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'

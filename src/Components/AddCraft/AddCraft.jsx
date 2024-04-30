@@ -35,7 +35,7 @@ const AddCraft = () => {
         // console.log(formData);
 
         // Add Craft Item to Database
-        fetch('http://localhost:5000/PaintingAndDrawing', {
+        fetch('https://bb-artistry-server.vercel.app/PaintingAndDrawing', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -217,7 +217,7 @@ const AddCraft = () => {
                     </form>
                 </div>
             </div>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
     );
 };

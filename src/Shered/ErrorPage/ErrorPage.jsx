@@ -8,7 +8,7 @@ const ErrorPage = () => {
         // <!-- error page start -->
         <div className="flex justify-center items-center text-center h-screen">
             <Helmet>
-                <title>Error Page | Page Not Found</title>
+                <title>Error Page | Page Not Found | BB-Artistry</title>
             </Helmet>
             <div id="error-page">
                 <span className="text-6xl font-bold text-red">{error.status}</span>
